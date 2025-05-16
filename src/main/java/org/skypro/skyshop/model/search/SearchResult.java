@@ -21,8 +21,15 @@ public class SearchResult {
         );
     }
 
-    // Геттеры
-    public UUID getId() { return id; }
-    public String getName() { return name; }
-    public String getContentType() { return contentType; }
+    public UUID getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getContentType() {
+        return contentType;
+    }
 }

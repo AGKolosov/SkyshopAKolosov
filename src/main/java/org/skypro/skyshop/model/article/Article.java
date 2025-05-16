@@ -1,6 +1,7 @@
 package org.skypro.skyshop.model.article;
 
 import org.skypro.skyshop.model.search.Searchable;
+
 import java.util.UUID;
 import java.util.Objects;
 
@@ -27,7 +28,9 @@ public class Article implements Searchable {
     }
 
     @Override
-    public UUID getId() { return id; }
+    public UUID getId() {
+        return id;
+    }
 
     @Override
     public String getSearchTerm() {
