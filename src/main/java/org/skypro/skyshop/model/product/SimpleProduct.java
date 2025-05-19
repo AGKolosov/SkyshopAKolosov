@@ -2,11 +2,12 @@ package org.skypro.skyshop.model.product;
 
 import java.util.UUID;
 
+// Empty commit to create PR
 public class SimpleProduct extends Product {
     private final int price;
 
     public SimpleProduct(UUID id, String name, int price) {
-        super(id, name);  // Передаем id и name в родительский класс
+        super(id, name);
         if (price <= 0) {
             throw new IllegalArgumentException("Price must be positive");
         }

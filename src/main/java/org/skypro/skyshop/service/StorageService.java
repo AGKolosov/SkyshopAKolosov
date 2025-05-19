@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+// Empty commit to create PR
 @Service
 public class StorageService {
     private final Map<UUID, Product> products = new HashMap<>();
@@ -17,11 +18,9 @@ public class StorageService {
     }
 
     private void initTestData() {
-        // Добавляем тестовые продукты
         products.put(UUID.randomUUID(), new SimpleProduct(UUID.randomUUID(), "Ноутбук", 50000));
         products.put(UUID.randomUUID(), new DiscountedProduct(UUID.randomUUID(), "Смартфон", 30000, 10));
 
-        // Добавляем тестовые статьи
         articles.put(UUID.randomUUID(), new Article(UUID.randomUUID(),
                 "Обзор смартфонов", "Сравнение моделей 2023"));
     }
