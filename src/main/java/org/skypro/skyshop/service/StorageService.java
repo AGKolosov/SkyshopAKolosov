@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-// Empty commit to create PR
 @Service
 public class StorageService {
     private final Map<UUID, Product> products = new HashMap<>();
