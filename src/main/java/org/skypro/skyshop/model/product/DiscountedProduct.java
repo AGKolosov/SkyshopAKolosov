@@ -2,6 +2,7 @@ package org.skypro.skyshop.model.product;
 
 import java.util.UUID;
 
+// Empty commit to create PR
 public class DiscountedProduct extends Product {
     private final int basePrice;
     private final int discount;

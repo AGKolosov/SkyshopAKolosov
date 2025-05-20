@@ -2,6 +2,7 @@ package org.skypro.skyshop.model.search;
 
 import java.util.UUID;
 
+// Empty commit to create PR
 public class SearchResult {
     private final UUID id;
     private final String name;
@@ -21,8 +22,15 @@ public class SearchResult {
         );
     }
 
-    // Геттеры
-    public UUID getId() { return id; }
-    public String getName() { return name; }
-    public String getContentType() { return contentType; }
+    public UUID getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getContentType() {
+        return contentType;
+    }
 }
