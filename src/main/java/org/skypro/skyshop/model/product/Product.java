@@ -5,7 +5,6 @@ import org.skypro.skyshop.model.search.Searchable;
 import java.util.Objects;
 import java.util.UUID;
 
-// Empty commit to create PR
 public abstract class Product implements Searchable {
     private final UUID id;
     private final String name;
