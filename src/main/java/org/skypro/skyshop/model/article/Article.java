@@ -1,5 +1,6 @@
 package org.skypro.skyshop.model.article;
 
+import org.skypro.skyshop.exceptions.NoSuchProductException;
 import org.skypro.skyshop.model.search.Searchable;
 
 import java.util.UUID;
@@ -12,7 +13,7 @@ public class Article implements Searchable {
 
     public Article(UUID id, String title, String text) {
         if (title == null || title.isBlank()) {
-            throw new IllegalArgumentException("Заголовок статьи не может быть пустым");
+            throw new NoSuchProductException("Заголовок статьи не может быть пустым");
         }
         this.id = id;
         this.title = title;

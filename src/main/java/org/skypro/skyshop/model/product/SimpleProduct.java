@@ -1,5 +1,7 @@
 package org.skypro.skyshop.model.product;
 
+import org.skypro.skyshop.exceptions.NoSuchProductException;
+
 import java.util.UUID;
 
 public class SimpleProduct extends Product {
@@ -8,7 +10,7 @@ public class SimpleProduct extends Product {
     public SimpleProduct(UUID id, String name, int price) {
         super(id, name);
         if (price <= 0) {
-            throw new IllegalArgumentException("Price must be positive");
+            throw new NoSuchProductException("Price must be positive");
         }
         this.price = price;
     }
