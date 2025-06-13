@@ -43,7 +43,7 @@ public class ShopController {
         return searchService.search(pattern);
     }
 
-    @PostMapping("/basket/{id}")
+    @GetMapping("/basket/{id}")
     public String addProduct(@PathVariable UUID id) {
         basketService.addProduct(id);
         return "Товар успешно добавлен в корзину";

@@ -1,5 +1,6 @@
 package org.skypro.skyshop.model.product;
 
+import org.skypro.skyshop.exceptions.NoSuchProductException;
 import org.skypro.skyshop.model.search.Searchable;
 
 import java.util.Objects;
@@ -11,7 +12,7 @@ public abstract class Product implements Searchable {
 
     public Product(UUID id, String name) {
         if (name == null || name.isBlank()) {
-            throw new IllegalArgumentException("Название продукта не может быть пустым или null");
+            throw new NoSuchProductException("Название продукта не может быть пустым или null");
         }
         this.id = id;
         this.name = name;
