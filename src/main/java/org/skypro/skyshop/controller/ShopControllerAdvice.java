@@ -19,7 +19,6 @@ public class ShopControllerAdvice {
         return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
     }
 
-    // Можно добавить обработку других исключений
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ShopError> handleGenericException(Exception ex) {
         ShopError error = new ShopError(
